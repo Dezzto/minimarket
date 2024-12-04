@@ -1,0 +1,346 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #a01a1a; /* Fondo rojo del header */
+    color: white;
+    padding: 0;
+    text-align: center;
+}
+
+.header-container {
+    background-color: #000000; /* Fondo plomo */
+    padding: 30px 0; /* Relleno arriba y abajo para darle espacio al texto */
+    width: 100%; /* El contenedor ocupa todo el ancho */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Elimina el margen */
+}
+
+header h1 {
+    margin: 0; /* Elimina márgenes adicionales */
+    font-size: 2rem; /* Ajusta el tamaño del texto */
+}
+
+nav {
+    display: flex; /* Usamos Flexbox */
+    align-items: center; /* Alinea la imagen y las opciones de menú verticalmente */
+    padding: 10px 20px;
+    justify-content: space-between; /* Alinea la imagen y las opciones de menú */
+}
+
+nav .nav-icon {
+    width: 150px; /* Ajustamos el tamaño de la imagen */
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Las opciones se alinean a la izquierda */
+    gap: 50px; /* Espacio entre las opciones */
+}
+
+nav ul li {
+    font-size: 1.2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f44336;
+}
+
+/* Carrusel de imágenes */
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 300%;  /* Ocupa el 300% del contenedor porque hay tres imágenes */
+}
+
+.slides img {
+    width: 33.35%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Cursor en la imagen de vega.jpg (enlace) */
+.nav-icon {
+    cursor: pointer;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #000000; /* Color plomo */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+/* Misión y Visión con fondo blanco que rellena a sus costados */
+.mision-vision {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+    background-color: white; /* Fondo blanco */
+}
+
+.mision-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.mision, .vision {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mision h2, .vision h2 {
+    color: #a01a1a; /* Color rojo */
+    font-size: 1.5rem;
+}
+
+.mision p, .vision p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Historia con fondo gris y su imagen al costado */
+.historia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    padding: 40px 0;
+}
+
+.historia-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.historia-texto {
+    width: 60%;
+    background-color: #e0e0e0; /* Fondo gris para la historia */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.historia-texto h2 {
+    color: #a01a1a; /* Color rojo */
+    font-size: 1.5rem;
+}
+
+.historia-texto p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.historia-imagen {
+    width: 35%;
+}
+
+.historia-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #1c1c1c; /* Color plomo */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+/* Estilos para el enlace */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f44336;
+}
+
+/* Estilos para el submenú */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Por defecto, el submenú está oculto */
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #000000; /* Color plomo */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+/* Estilos para las secciones de cada año */
+.ventana {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    margin: 40px auto; /* Centrar la sección */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ventana h2 {
+    color: #a01a1a; /* Color rojo */
+    font-size: 2rem;
+}
+
+.contenido-ventana {
+    margin-top: 20px;
+}
+
+.contenido-ventana p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 500px;
+}
+/* Estilos para los autores */
+.autores-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.autores-container h2 {
+    color: #a01a1a;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.autores {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.autor {
+    width: 250px;
+    text-align: center;
+}
+
+.autor-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.autor p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
